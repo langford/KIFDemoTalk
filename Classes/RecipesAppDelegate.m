@@ -50,6 +50,8 @@
 #import "RecipeListTableViewController.h"
 #import "UnitConverterTableViewController.h"
 
+#import "CDRTestController.h"
+
 @implementation RecipesAppDelegate
 
 @synthesize window;
@@ -61,6 +63,13 @@
     recipeListController.managedObjectContext = self.managedObjectContext;
     [window addSubview:tabBarController.view];
     [window makeKeyAndVisible];
+    
+#if RUN_KIF_TESTS
+    [[CDRTestController sharedInstance] startTestingWithCompletionBlock:^{
+        // Exit after the tests complete so that CI knows we're done
+        exit([[CDRTestController sharedInstance] failureCount]);
+    }];
+#endif
 }
 
 
