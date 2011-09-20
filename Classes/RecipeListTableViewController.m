@@ -68,6 +68,7 @@
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
     UIBarButtonItem *addButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add:)];
+    addButtonItem.accessibilityLabel = @"+"; //MJL Needed to add this so I could click it.
     self.navigationItem.rightBarButtonItem = addButtonItem;
     [addButtonItem release];
     

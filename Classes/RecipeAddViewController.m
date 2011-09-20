@@ -67,7 +67,10 @@
     [cancelButtonItem release];
     
     UIBarButtonItem *saveButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStyleDone target:self action:@selector(save)];
+    saveButtonItem.accessibilityLabel = @"save";
     self.navigationItem.rightBarButtonItem = saveButtonItem;
+    
+    nameTextField.accessibilityLabel = @"Recipe Name";
     [saveButtonItem release];
 	
 	[nameTextField becomeFirstResponder];

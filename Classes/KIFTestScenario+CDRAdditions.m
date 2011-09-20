@@ -34,6 +34,8 @@
     [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Recipes"]];
     [scenario addStep:[KIFTestStep stepToWaitForTappableViewWithAccessibilityLabel:@"+"]];
     [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"+"]];
+    [scenario addStep:[KIFTestStep stepToEnterText:@"Fried Butter on a Stick" intoViewWithAccessibilityLabel:@"Recipe Name"]];
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Save"]];
     
     return scenario;
 }
