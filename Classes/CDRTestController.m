@@ -7,12 +7,13 @@
 //
 
 #import "CDRTestController.h"
+#import "KIFTestScenario+CDRAdditions.h"
 
 @implementation CDRTestController
 
 - (void)initializeScenarios;
 {
-    [self addScenario:[KIFTestScenario scenarioToLogIn]];
+    [self addScenario:[KIFTestScenario testTabs]];
     // Add additional scenarios you want to test here
 }
 

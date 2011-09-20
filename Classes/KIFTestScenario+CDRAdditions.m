@@ -4,17 +4,18 @@
 
 @implementation KIFTestScenario (CDRAdditions)
 
-+ (id)scenarioToLogIn;
++ (id)testTabs;
 {
-    KIFTestScenario *scenario = [KIFTestScenario scenarioWithDescription:@"Test that a user can successfully log in."];
+    KIFTestScenario *scenario = [KIFTestScenario scenarioWithDescription:@"Test that the recipe view can be brought up"];
     [scenario addStep:[KIFTestStep stepToReset]];
-    [scenario addStepsFromArray:[KIFTestStep stepsToGoToLoginPage]];
-    [scenario addStep:[KIFTestStep stepToEnterText:@"user@example.com" intoViewWithAccessibilityLabel:@"Login User Name"]];
-    [scenario addStep:[KIFTestStep stepToEnterText:@"thisismypassword" intoViewWithAccessibilityLabel:@"Login Password"]];
-    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Log In"]];
-    
-    // Verify that the login succeeded
-    [scenario addStep:[KIFTestStep stepToWaitForTappableViewWithAccessibilityLabel:@"Welcome"]];
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Recipes"]];
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Unit Conversion"]];
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Recipes"]];
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Unit Conversion"]];    
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Recipes"]];
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Unit Conversion"]];
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Recipes"]];
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Unit Conversion"]];
     
     return scenario;
 }

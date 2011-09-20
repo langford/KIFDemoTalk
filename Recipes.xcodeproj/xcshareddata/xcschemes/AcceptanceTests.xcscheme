@@ -6,15 +6,15 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "YES"
+            buildForTesting = "NO"
             buildForRunning = "YES"
             buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "89077B1D14285571004E7426"
-               BuildableName = "Recipes.app"
+               BuildableName = "Recipes copy.app"
                BlueprintName = "AcceptanceTests"
                ReferencedContainer = "container:Recipes.xcodeproj">
             </BuildableReference>
@@ -39,7 +39,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "89077B1D14285571004E7426"
-            BuildableName = "Recipes.app"
+            BuildableName = "Recipes copy.app"
             BlueprintName = "AcceptanceTests"
             ReferencedContainer = "container:Recipes.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "89077B1D14285571004E7426"
-            BuildableName = "Recipes.app"
+            BuildableName = "Recipes copy.app"
             BlueprintName = "AcceptanceTests"
             ReferencedContainer = "container:Recipes.xcodeproj">
          </BuildableReference>

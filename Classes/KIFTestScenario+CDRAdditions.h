@@ -3,6 +3,6 @@
 
 @interface KIFTestScenario (CDRAdditions)
 
-+ (id)scenarioToLogIn;
++ (id)testTabs;
 
 @end
