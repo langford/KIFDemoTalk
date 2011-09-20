@@ -4,5 +4,6 @@
 @interface KIFTestScenario (CDRAdditions)
 
 + (id)testTabs;
-
++(id)verifyRecipeTabHasEdit;
++(id)addRecipe;
 @end

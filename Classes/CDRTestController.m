@@ -14,6 +14,8 @@
 - (void)initializeScenarios;
 {
     [self addScenario:[KIFTestScenario testTabs]];
+    [self addScenario:[KIFTestScenario verifyRecipeTabHasEdit]];
+        [self addScenario:[KIFTestScenario addRecipe]];
     // Add additional scenarios you want to test here
 }
 
