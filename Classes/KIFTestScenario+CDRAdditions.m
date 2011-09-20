@@ -36,7 +36,11 @@
     [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"+"]];
     [scenario addStep:[KIFTestStep stepToEnterText:@"Fried Butter on a Stick" intoViewWithAccessibilityLabel:@"Recipe Name"]];
     [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Save"]];
+    [scenario addStep:[KIFTestStep stepToWaitForTappableViewWithAccessibilityLabel:@"Edit"]];
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Edit"]];
     
+    [scenario addStep:[KIFTestStep stepToEnterText:@"Iowa State Fair Style" intoViewWithAccessibilityLabel:@"Description"]];
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Done"]];    
     return scenario;
 }
 
