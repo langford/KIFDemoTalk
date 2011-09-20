@@ -96,7 +96,9 @@
 		89077B4B14285571004E7426 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B35EC70FC5DCD100ED0C40 /* Foundation.framework */; };
 		89077B4C14285571004E7426 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B35EC90FC5DCD100ED0C40 /* UIKit.framework */; };
 		89077B5D1428563E004E7426 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89077B5C14285608004E7426 /* libKIF.a */; };
-		89077B6214285691004E7426 /* CDRTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89077B6114285691004E7426 /* CDRTestController.m */; };
+		89077B651428577D004E7426 /* KIFTestScenario+CDRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89077B641428577D004E7426 /* KIFTestScenario+CDRAdditions.m */; };
+		89077B68142857E7004E7426 /* KIFTestStep+CDRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89077B67142857E6004E7426 /* KIFTestStep+CDRAdditions.m */; };
+		89077B6B1428583F004E7426 /* CDRTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89077B6A1428583F004E7426 /* CDRTestController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,8 +185,12 @@
 		89077B5014285571004E7426 /* Recipes copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipes copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89077B5214285572004E7426 /* Recipes copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Recipes copy-Info.plist"; path = "/Users/mlangford/Documents/rowdylabs_ip/KIFDemo/Recipes copy-Info.plist"; sourceTree = "<absolute>"; };
 		89077B5414285608004E7426 /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = Frameworks/KIF/KIF.xcodeproj; sourceTree = "<group>"; };
-		89077B6014285691004E7426 /* CDRTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDRTestController.h; sourceTree = "<group>"; };
-		89077B6114285691004E7426 /* CDRTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDRTestController.m; sourceTree = "<group>"; };
+		89077B631428577D004E7426 /* KIFTestScenario+CDRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KIFTestScenario+CDRAdditions.h"; path = "Classes/KIFTestScenario+CDRAdditions.h"; sourceTree = "<group>"; };
+		89077B641428577D004E7426 /* KIFTestScenario+CDRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "KIFTestScenario+CDRAdditions.m"; path = "Classes/KIFTestScenario+CDRAdditions.m"; sourceTree = "<group>"; };
+		89077B66142857E6004E7426 /* KIFTestStep+CDRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KIFTestStep+CDRAdditions.h"; path = "Classes/KIFTestStep+CDRAdditions.h"; sourceTree = "<group>"; };
+		89077B67142857E6004E7426 /* KIFTestStep+CDRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "KIFTestStep+CDRAdditions.m"; path = "Classes/KIFTestStep+CDRAdditions.m"; sourceTree = "<group>"; };
+		89077B691428583F004E7426 /* CDRTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDRTestController.h; path = Classes/CDRTestController.h; sourceTree = "<group>"; };
+		89077B6A1428583F004E7426 /* CDRTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDRTestController.m; path = Classes/CDRTestController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		966D0AFA0DF4CB4D0054F11F /* IngredientDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientDetailViewController.h; sourceTree = "<group>"; };
 		966D0AFB0DF4CB4D0054F11F /* IngredientDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientDetailViewController.m; sourceTree = "<group>"; };
@@ -363,8 +369,12 @@
 		89077B53142855E6004E7426 /* Acceptance Tests */ = {
 			isa = PBXGroup;
 			children = (
-				89077B6014285691004E7426 /* CDRTestController.h */,
-				89077B6114285691004E7426 /* CDRTestController.m */,
+				89077B691428583F004E7426 /* CDRTestController.h */,
+				89077B6A1428583F004E7426 /* CDRTestController.m */,
+				89077B631428577D004E7426 /* KIFTestScenario+CDRAdditions.h */,
+				89077B641428577D004E7426 /* KIFTestScenario+CDRAdditions.m */,
+				89077B66142857E6004E7426 /* KIFTestStep+CDRAdditions.h */,
+				89077B67142857E6004E7426 /* KIFTestStep+CDRAdditions.m */,
 			);
 			name = "Acceptance Tests";
 			sourceTree = "<group>";
@@ -584,7 +594,9 @@
 				89077B4514285571004E7426 /* Ingredient.m in Sources */,
 				89077B4614285571004E7426 /* IngredientDetailViewController.m in Sources */,
 				89077B4714285571004E7426 /* EditingTableViewCell.m in Sources */,
-				89077B6214285691004E7426 /* CDRTestController.m in Sources */,
+				89077B651428577D004E7426 /* KIFTestScenario+CDRAdditions.m in Sources */,
+				89077B68142857E7004E7426 /* KIFTestStep+CDRAdditions.m in Sources */,
+				89077B6B1428583F004E7426 /* CDRTestController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
