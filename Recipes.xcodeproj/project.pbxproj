@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -95,6 +95,8 @@
 		89077B4A14285571004E7426 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B35EC50FC5DCD100ED0C40 /* CoreGraphics.framework */; };
 		89077B4B14285571004E7426 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B35EC70FC5DCD100ED0C40 /* Foundation.framework */; };
 		89077B4C14285571004E7426 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B35EC90FC5DCD100ED0C40 /* UIKit.framework */; };
+		89077B5D1428563E004E7426 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89077B5C14285608004E7426 /* libKIF.a */; };
+		89077B6214285691004E7426 /* CDRTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89077B6114285691004E7426 /* CDRTestController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,13 @@
 			containerPortal = 89077B5414285608004E7426 /* KIF.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AAB07268139719AC008AF393;
+			remoteInfo = KIF;
+		};
+		89077B5E14285645004E7426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89077B5414285608004E7426 /* KIF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AAB07267139719AC008AF393;
 			remoteInfo = KIF;
 		};
 /* End PBXContainerItemProxy section */
@@ -174,6 +183,8 @@
 		89077B5014285571004E7426 /* Recipes copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipes copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89077B5214285572004E7426 /* Recipes copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Recipes copy-Info.plist"; path = "/Users/mlangford/Documents/rowdylabs_ip/KIFDemo/Recipes copy-Info.plist"; sourceTree = "<absolute>"; };
 		89077B5414285608004E7426 /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = Frameworks/KIF/KIF.xcodeproj; sourceTree = "<group>"; };
+		89077B6014285691004E7426 /* CDRTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDRTestController.h; sourceTree = "<group>"; };
+		89077B6114285691004E7426 /* CDRTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDRTestController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		966D0AFA0DF4CB4D0054F11F /* IngredientDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientDetailViewController.h; sourceTree = "<group>"; };
 		966D0AFB0DF4CB4D0054F11F /* IngredientDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientDetailViewController.m; sourceTree = "<group>"; };
@@ -195,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89077B5D1428563E004E7426 /* libKIF.a in Frameworks */,
 				89077B4914285571004E7426 /* CoreData.framework in Frameworks */,
 				89077B4A14285571004E7426 /* CoreGraphics.framework in Frameworks */,
 				89077B4B14285571004E7426 /* Foundation.framework in Frameworks */,
@@ -310,7 +322,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				89077B53142855E6004E7426 /* KIF */,
+				89077B53142855E6004E7426 /* Acceptance Tests */,
 				28CB440A0DF7129800C7BCF9 /* ReadMe.txt */,
 				28FCBE8F0DE69AD4007A15C7 /* Model and Model Classes */,
 				286DDA180DE761A2005EF016 /* MainWindow */,
@@ -339,6 +351,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89077B5414285608004E7426 /* KIF.xcodeproj */,
 				28B35EC30FC5DCD100ED0C40 /* CoreData.framework */,
 				28B35EC50FC5DCD100ED0C40 /* CoreGraphics.framework */,
 				28B35EC70FC5DCD100ED0C40 /* Foundation.framework */,
@@ -347,12 +360,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		89077B53142855E6004E7426 /* KIF */ = {
+		89077B53142855E6004E7426 /* Acceptance Tests */ = {
 			isa = PBXGroup;
 			children = (
-				89077B5414285608004E7426 /* KIF.xcodeproj */,
+				89077B6014285691004E7426 /* CDRTestController.h */,
+				89077B6114285691004E7426 /* CDRTestController.m */,
 			);
-			name = KIF;
+			name = "Acceptance Tests";
 			sourceTree = "<group>";
 		};
 		89077B5514285608004E7426 /* Products */ = {
@@ -409,6 +423,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				89077B5F14285645004E7426 /* PBXTargetDependency */,
 			);
 			name = AcceptanceTests;
 			productName = ChocolateCake;
@@ -420,8 +435,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Recipes" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -566,10 +584,19 @@
 				89077B4514285571004E7426 /* Ingredient.m in Sources */,
 				89077B4614285571004E7426 /* IngredientDetailViewController.m in Sources */,
 				89077B4714285571004E7426 /* EditingTableViewCell.m in Sources */,
+				89077B6214285691004E7426 /* CDRTestController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89077B5F14285645004E7426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KIF;
+			targetProxy = 89077B5E14285645004E7426 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		53CE978411C6E99200594C94 /* MainWindow.xib */ = {
@@ -648,6 +675,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Recipes_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Frameworks/KIF/**",
@@ -669,6 +697,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Recipes_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Frameworks/KIF/**",
@@ -693,6 +722,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Recipes_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "RUN_KIF_TESTS=1";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Frameworks/KIF/**",
@@ -715,6 +745,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Recipes_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "RUN_KIF_TESTS=1";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Frameworks/KIF/**",
@@ -739,9 +770,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -754,8 +784,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
-				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
