@@ -41,6 +41,8 @@
     
     [scenario addStep:[KIFTestStep stepToEnterText:@"Iowa State Fair Style" intoViewWithAccessibilityLabel:@"Description"]];
     [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Done"]];    
+    
+    [scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Instructions"]];
     return scenario;
 }
 
